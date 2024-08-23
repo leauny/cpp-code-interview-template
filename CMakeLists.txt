@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_compile_options(-O0 -Wall -Wextra)
+add_compile_definitions(IO_REDIRECTION)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
   set(SANITIZER_OPTION "undefined")
